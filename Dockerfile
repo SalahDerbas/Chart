@@ -1,5 +1,5 @@
 FROM php:7.4-fpm
-
+COPY .  /var/www/
 # Arguments defined in docker-compose.yml
 #ARG user
 #ARG uid
@@ -30,6 +30,5 @@ COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 
 # Set working directory
 WORKDIR /var/www
-COPY . .
 
 #USER $user
