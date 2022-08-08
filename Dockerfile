@@ -34,7 +34,6 @@ RUN mv .env.example .env
 RUN composer update
 RUN php artisan key:generate
 RUN php artisan config:cache
-RUN php artisan migrate:refresh --seed
 
 
 
