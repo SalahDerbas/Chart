@@ -33,8 +33,5 @@ WORKDIR /var/www
 RUN mv .env.example .env
 RUN composer update
 RUN php artisan key:generate
-RUN php artisan config:cache
-
-
 
 #USER $user
