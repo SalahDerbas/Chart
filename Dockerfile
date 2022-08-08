@@ -1,5 +1,5 @@
 FROM php:7.4-fpm
-COPY .  /var/www/
+COPY .  /app
 # Arguments defined in docker-compose.yml
 #ARG user
 #ARG uid
@@ -29,7 +29,7 @@ COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 #    chown -R $user:$user /home/$user
 
 # Set working directory
-WORKDIR /var/www
+WORKDIR /app
 RUN mv .env.example .env
 RUN composer update
 RUN php artisan key:generate
