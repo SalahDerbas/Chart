@@ -46,9 +46,9 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item"><a class="nav-link" href="{{ route('bar') }}">bar</a> </li>
-                        <li class="nav-item"><a class="nav-link" href="{{ route('circle') }}">circle</a> </li>
-                        <li class="nav-item"><a class="nav-link" href="{{ route('coordinate') }}">coordinate</a> </li>
+                        <li class="nav-item"><a class="nav-link" href="{{ route('bar') }}">Dynamic bar</a> </li>
+                        <li class="nav-item"><a class="nav-link" href="{{ route('circle') }}">Dynamic circle</a> </li>
+                        <li class="nav-item"><a class="nav-link" href="{{ route('coordinate') }}">Dynamic coordinate</a> </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Static Charts</a>
                             <div class="dropdown-menu" aria-labelledby="dropdown01">
